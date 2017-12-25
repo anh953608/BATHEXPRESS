@@ -1,61 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>BATH Express</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
-<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
-</head>
+<%@ include file = "header.jsp" %>
 <body>
-<div class="bao-dt-header">
-  <div class="container-fluid">
-  	<a class="bao-dt-logo" style="text-decoration: none;" href="${pageContext.request.contextPath}">BATH Express</a>
-  </div>
-</div>
-
-<div id="bao-dt-navbar" class="bao-dt-navbar" style="z-index:1000">
-  <nav class="navbar navbar-inverse" style="border-radius: 0px;">
-  <div class="container-fluid" style="font-size: 14px;">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBath">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Home</a>
-    </div>
-    <div class="collapse navbar-collapse" id="navBath">
-      <ul class="nav navbar-nav">
-        <li class="dropdown-menubar">
-          <a class="dropdown-toggle" onclick="javascript:void(0)">THẾ GIỚI <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">TRONG NƯỚC</a></li>
-        <li><a href="#">THỂ THAO</a></li>
-        <li><a href="#">GIẢI TRÍ</a></li>
-        <li><a href="#">SỨC KHỎE & ĐỜI SỐNG</a></li>
-        <li><a href="#">KH & CN</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      	<li><a href="#"><input type="text" name="search" id="search" class="form-control square" style="margin: -4px 0px;height: 27px;border-radius: 0px;margin-right: 192px;"></a></li>
-        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/magnifier.png" style='width: 20px;height: 20px;'/></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</div>
+<%@ include file = "menubar.jsp" %>
 <div class="container">
 	<div class="container1">
 		<div class="row">
@@ -64,21 +11,21 @@
 					<div class="slideshow-container">
 						<div class=slideshows>
 							<div class="numbertext">1 / 3</div>
-						 		<img src="${pageContext.request.contextPath}/resources/images/img_mountains_wide.jpg" alt="Notebook" style="width:100%;height: 350px;">
+						 		<img src="<c:url value="/resources/images/img_mountains_wide.jpg"/>" alt="Notebook" style="width:100%;height: 350px;">
 						  		<div class="content">
 						    		<h4>Heading</h4>
 						  		</div>
 						</div>
 						<div class=slideshows>
-							<div class="numbertext">1 / 3</div>
-						  	<img src="${pageContext.request.contextPath}/resources/images/img_fjords_wide.jpg" alt="Notebook" style="width:100%;height: 350px;">
+							<div class="numbertext">2 / 3</div>
+						  	<img src="<c:url value="/resources/images/img_fjords_wide.jpg"/>" alt="Notebook" style="width:100%;height: 350px;">
 							<div class="content">
 							  <h4>Heading</h4>
 							</div>
 						</div>
 						<div class=slideshows>
-							<div class="numbertext">1 / 3</div>
-						  	<img src="${pageContext.request.contextPath}/resources/images/img_nature_wide.jpg" alt="Notebook" style="width:100%;height: 350px;">
+							<div class="numbertext">3 / 3</div>
+						  	<img src="<c:url value="/resources/images/img_nature_wide.jpg"/>" alt="Notebook" style="width:100%;height: 350px;">
 						  	<div class="content">
 						    	<h4>Heading</h4>
 						  	</div>
@@ -168,53 +115,9 @@
 	</div>
 	<div class="container2">
 	</div>
-	
 </div>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slideshows");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
-<script>
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("bao-dt-navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-<script>
-function showMenu() {
-    var x = document.getElementById("bao-dt-navbar");
-    if (x.className === "bao-dt-navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "bao-dt-navbar";
-    }
-}
-</script>
+<%@ include file = "footer.jsp" %>
 </body>
 </html>
+<script src="${pageContext.request.contextPath}/resources/js/menubar.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/slideshows.js"></script>

@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ManagementPageController {
 	@RequestMapping(value = "/managementpage.html", method = RequestMethod.GET)
 	public ModelAndView homePage(){
-		return new ModelAndView("managementpage");
+		return new ModelAndView("managementPage");
 	}
 
 }

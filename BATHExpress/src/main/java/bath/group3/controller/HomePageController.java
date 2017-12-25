@@ -9,6 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomePageController {
 	@RequestMapping(value = "/homepage.html", method = RequestMethod.GET)
 	public ModelAndView homePage(){
-		return new ModelAndView("homepage");
+		return new ModelAndView("homePage");
 	}
 }
