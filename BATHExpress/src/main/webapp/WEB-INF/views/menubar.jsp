@@ -2,7 +2,7 @@
 	pageEncoding="utf-8"%>
 <div class="bao-dt-header">
   <div class="container-fluid">
-  	<a class="bao-dt-logo" style="text-decoration: none;" href="${pageContext.request.contextPath}">BATH Express</a>
+  	<a class="bao-dt-logo" style="text-decoration: none;" href="">BATH Express</a>
   	<a class="btn btn-default square btn-dangky-dangnhap" >Đăng ký</a>
   	<a class="btn btn-default square btn-dangky-dangnhap" id="btndn">Đăng nhập</a>
   </div>
@@ -36,7 +36,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
       	<li><a href="#"><input type="text" name="search" id="search" class="form-control square" style="margin: -4px 0px;height: 27px;border-radius: 0px;margin-right: 150px;"></a></li>
-        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/magnifier.png" style='width: 20px;height: 20px;'/></a></li>
+        <li><a href="#"><img src="<c:url value="/resources/images/magnifier.png"/>" style='width: 20px;height: 20px;'/></a></li>
         <div class="btnDKDN" id="btnDKDN">
 	        <a class="btn btn-default square">Đăng ký</a>
 	  		<a class="btn btn-default square" id="btndna">Đăng nhập</a>

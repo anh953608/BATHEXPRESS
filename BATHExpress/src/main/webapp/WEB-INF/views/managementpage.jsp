@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Insert title here</title>
     <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css" />" />
     <!-- FontAwesome Styles-->
@@ -43,7 +43,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="${pageContext.request.contextPath}/resources/images/boy.png" class="img-circle" alt="User Image">
+                        <img src="<c:url value="/resources/images/boy.png"/>" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -58,13 +58,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="${pageContext.request.contextPath}/resources/images/boy.png" class="user-image" alt="User Image">
+              <img src="<c:url value="/resources/images/boy.png"/>" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="${pageContext.request.contextPath}/resources/images/boy.png" class="img-circle" alt="User Image">
+                <img src="<c:url value="/resources/images/boy.png"/>" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer

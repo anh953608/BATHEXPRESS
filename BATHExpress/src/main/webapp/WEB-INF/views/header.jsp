@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css"  href="<c:url value="/resources/css/bootstrap.min.css" />">
 <link rel="stylesheet" href="<c:url value="/resources/font-awesome/css/font-awesome.min.css" />" />
 <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="<c:url value="/resources/js/angular.min.js"/>"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/style.css" />">
 </head>

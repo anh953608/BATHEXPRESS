@@ -41,7 +41,7 @@
 						<div class="contaner-news-nb" style="border-bottom: 1px dotted #d4cccc;margin-top: 15px;">
 							<div class="contaner-news" style="border-bottom: 0px dotted #d4cccc;">
 								<div class="box-image">
-						  			<img src="${pageContext.request.contextPath}/resources/images/img_nature_wide.jpg" alt="Notebook" style="width:150px;height: 100px;">
+						  			<img src="<c:url value="/resources/images/img_nature_wide.jpg"/>" alt="Notebook" style="width:150px;height: 100px;">
 						  		</div>
 						  		<div class="detail-content-news" style="margin-left: 9px;">
 						  			<p>Những thông điệp mới nhất từ vật thể du hành liên sao mà chúng ta quan sát được</p>
@@ -54,7 +54,7 @@
 				  		<div class="contaner-news-nb" style="border-bottom: 1px dotted #d4cccc;margin-top: 15px;">
 							<div class="contaner-news" style="border-bottom: 0px dotted #d4cccc;">
 								<div class="box-image">
-						  			<img src="${pageContext.request.contextPath}/resources/images/img_nature_wide.jpg" alt="Notebook" style="width:150px;height: 100px;">
+						  			<img src="<c:url value="/resources/images/img_nature_wide.jpg"/>" alt="Notebook" style="width:150px;height: 100px;">
 						  		</div>
 						  		<div class="detail-content-news" style="margin-left: 9px;">
 						  			<p>Những thông điệp mới nhất từ vật thể du hành liên sao mà chúng ta quan sát được</p>
@@ -67,7 +67,7 @@
 				  		<div class="contaner-news-nb" style="border-bottom: 1px dotted #d4cccc;margin-top: 15px;">
 							<div class="contaner-news" style="border-bottom: 0px dotted #d4cccc;">
 								<div class="box-image">
-						  			<img src="${pageContext.request.contextPath}/resources/images/img_nature_wide.jpg" alt="Notebook" style="width:150px;height: 100px;">
+						  			<img src="<c:url value="/resources/images/img_nature_wide.jpg"/>" alt="Notebook" style="width:150px;height: 100px;">
 						  		</div>
 						  		<div class="detail-content-news" style="margin-left: 9px;">
 						  			<p>Những thông điệp mới nhất từ vật thể du hành liên sao mà chúng ta quan sát được</p>
@@ -87,7 +87,7 @@
 					<div class="dropdown-news">
 					  	<div class="contaner-news">
 						  	<div class="box-image">
-					  			<img src="${pageContext.request.contextPath}/resources/images/img_nature_wide.jpg" alt="Notebook" style="width:130px;height: 80px;">
+					  			<img src="<c:url value="/resources/images/img_nature_wide.jpg"/>" alt="Notebook" style="width:130px;height: 80px;">
 					  		</div>
 					  		<div class="title-news">
 					  			<h3 style="margin: 0;"><span class="title-box-news">Những thông điệp mới nhất từ vật thể du hành liên sao mà chúng ta quan sát được</span></h3>
@@ -99,7 +99,7 @@
 					  <div class="contaner-news">
 				  		<div class="contaner-news">
 						  	<div class="box-image">
-					  			<img src="${pageContext.request.contextPath}/resources/images/img_nature_wide.jpg" alt="Notebook" style="width:130px;height: 80px;">
+					  			<img src="<c:url value="/resources/images/img_nature_wide.jpg"/>" alt="Notebook" style="width:130px;height: 80px;">
 					  		</div>
 					  		<div class="title-news">
 					  			<h3 style="margin: 0;"><span class="title-box-news">Bạn nên làm gì khi bị đập mạnh vào đầu?</span></h3>
@@ -119,5 +119,5 @@
 <%@ include file = "footer.jsp" %>
 </body>
 </html>
-<script src="${pageContext.request.contextPath}/resources/js/menubar.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/slideshows.js"></script>
+<script src="<c:url value="/resources/js/menubar.js"/>"></script>
+<script src="<c:url value="/resources/js/slideshows.js"/>"></script>

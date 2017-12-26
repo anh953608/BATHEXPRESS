@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class ComposeController {
-	@RequestMapping(value = "composepage.html", method = RequestMethod.GET)
+	@RequestMapping(value = "composepage", method = RequestMethod.GET)
 	public ModelAndView composePage(){
 		return new ModelAndView("composePage");
 	}

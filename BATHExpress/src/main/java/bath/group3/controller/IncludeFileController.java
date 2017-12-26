@@ -7,15 +7,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class IncludeFileController {
-	@RequestMapping(value = "/footer.html", method = RequestMethod.GET)
+	@RequestMapping(value = "/footer", method = RequestMethod.GET)
 	public ModelAndView footerPage(){
 		return new ModelAndView("footer");
 	}
-	@RequestMapping(value = "/header.html", method = RequestMethod.GET)
+	@RequestMapping(value = "/header", method = RequestMethod.GET)
 	public ModelAndView headPage(){
 		return new ModelAndView("header");
 	}
-	@RequestMapping(value = "/menu.html", method = RequestMethod.GET)
+	@RequestMapping(value = "/menu", method = RequestMethod.GET)
 	public ModelAndView mewnuPage(){
 		return new ModelAndView("menubar");
 	}

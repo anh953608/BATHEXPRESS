@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class DetailNewsController {
-	@RequestMapping(value ="/detailnews.html", method = RequestMethod.GET)
+	@RequestMapping(value ="/detailnews", method = RequestMethod.GET)
 	public ModelAndView detailNews(){
 		return new ModelAndView("detailNews");
 	}

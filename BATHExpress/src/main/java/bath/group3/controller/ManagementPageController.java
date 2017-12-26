@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class ManagementPageController {
-	@RequestMapping(value = "/managementpage.html", method = RequestMethod.GET)
+	@RequestMapping(value = "/managementpage", method = RequestMethod.GET)
 	public ModelAndView homePage(){
 		return new ModelAndView("managementPage");
 	}
