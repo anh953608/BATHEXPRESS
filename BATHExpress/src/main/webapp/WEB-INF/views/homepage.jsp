@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="container1">
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-7">
 				<div class="col-sm-12">
 					<div class="slideshow-container">
 						<div class=slideshows>
@@ -81,7 +81,7 @@
 					
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-5">
 				<div class="box-tin">
 					<div class="box-title"><h4>TIN MỚI</h4></div>
 					<div class="dropdown-news">

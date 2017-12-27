@@ -30,14 +30,14 @@
         <property name="show_sql">true</property>
         
         <!-- Mention here all the model classes along with their package name --> 
- 		<mapping class="bath.group3.model.AssociateRole"/>
- 		<mapping class="bath.group3.model.Comment"/>
+ 		<!-- <mapping class="bath.group3.model.Comment"/>
+ 		<mapping class="bath.group3.model.FeedBack"/>-->
+  		<mapping class="bath.group3.model.News"/> 
  		<mapping class="bath.group3.model.DetailNewsCal"/>
- 		<mapping class="bath.group3.model.FeedBack"/>
- 		<mapping class="bath.group3.model.News"/>
- 		<mapping class="bath.group3.model.NewsCategory"/>
- 		<mapping class="bath.group3.model.Reader"/>
+ 		<mapping class="bath.group3.model.NewsCategory"/>  
+ 		<mapping class="bath.group3.model.AssociateRole"/>
  		<mapping class="bath.group3.model.Role"/>
+ 		<mapping class="bath.group3.model.Reader"/>
  		<mapping class="bath.group3.model.Manager"/>
     </session-factory>
 </hibernate-configuration>

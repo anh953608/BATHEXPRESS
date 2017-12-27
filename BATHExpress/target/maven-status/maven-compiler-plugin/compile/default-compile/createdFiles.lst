@@ -1,17 +1,9 @@
-bath\group3\controller\ManagementPageController.class
 bath\group3\dao\NewsDAO.class
 bath\group3\util\EncodeMD5.class
 bath\group3\util\HibernateUtil.class
 bath\group3\model\Role.class
-bath\group3\controller\ComposeController.class
-bath\group3\model\News.class
 bath\group3\model\Manager.class
 bath\group3\model\NewsCategory.class
-bath\group3\controller\DetailNewsController.class
-bath\group3\model\AssociateRole.class
-bath\group3\controller\IncludeFileController.class
-bath\group3\controller\HomePageController.class
 bath\group3\model\Reader.class
 bath\group3\model\Comment.class
 bath\group3\model\FeedBack.class
-bath\group3\model\DetailNewsCal.class
